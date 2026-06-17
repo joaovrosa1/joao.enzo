@@ -3,139 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Camisas de Time</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>FutStore | Camisas de Time</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body>
 
-    <header class="bg-black text-white sticky top-0 z-50 shadow-md">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-2xl font-black tracking-wider text-green-400">ARENA MANTOS</h1>
-            <nav class="hidden md:flex space-x-6 font-semibold">
-                <a href="#" class="hover:text-green-400 transition">Início</a>
-                <a href="#" class="hover:text-green-400 transition">Nacionais</a>
-                <a href="#" class="hover:text-green-400 transition">Internacionais</a>
-                <a href="#" class="hover:text-green-400 transition">Promoções</a>
-            </nav>
-            <div class="flex items-center space-x-4">
-                <button class="relative p-2 hover:text-green-400 transition">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-                    </svg>
-                    <span class="absolute top-0 right-0 bg-green-500 text-black text-xs font-bold rounded-full h-4 w-4 flex items-center justify-center">3</span>
-                </button>
-            </div>
+    <header>
+        <div class="logo">
+            <h1>Fut<span>Store</span></h1>
         </div>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Nacionais</a></li>
+                <li><a href="#">Internacionais</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section class="bg-gradient-to-r from-black to-gray-900 text-white py-20 px-4 text-center">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-4xl md:text-6xl font-extrabold mb-4">VISTA A PAIXÃO PELO SEU TIME</h2>
-            <p class="text-gray-400 text-lg mb-8">As novas camisas da temporada 2026 com frete grátis para todo o Brasil.</p>
-            <a href="#produtos" class="bg-green-500 text-black font-bold px-8 py-3 rounded-md hover:bg-green-400 transition transform hover:scale-105 inline-block">
-                Ver Lançamentos
-            </a>
+    <section class="banner">
+        <div class="banner-text">
+            <h2>As Melhores Armaduras Do Seu Time</h2>
+            <p>Frete grátis para todo o Brasil nas compras acima de R$ 299</p>
+            <a href="#" class="btn">Ver Catálogo</a>
         </div>
     </section>
 
-    <main id="produtos" class="container mx-auto px-4 py-16">
-        <h3 class="text-3xl font-bold text-center mb-12 uppercase tracking-wide">Lançamentos Temporada 2026</h3>
+    <main class="container">
+        <h2 class="titulo-secao">Lançamentos Repaginados</h2>
         
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group">
-                <div class="relative bg-gray-100 h-72 flex items-center justify-center overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?w=500" alt="Camisa de Time" class="object-cover h-full w-full group-hover:scale-110 transition duration-300">
-                    <span class="absolute top-2 left-2 bg-green-500 text-black text-xs font-bold px-2 py-1 rounded">LANÇAMENTO</span>
+        <div class="produtos-grid">
+            <div class="produto-card">
+                <div class="produto-img">
+                    <img src="https://images.unsplash.com/photo-1624953587687-daf2df7158c2?w=500" alt="Camisa de Time">
                 </div>
-                <div class="p-4 flex-grow flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Brasileirão</p>
-                        <h4 class="font-bold text-lg mb-2">Camisa Flamengo Home 2026</h4>
-                    </div>
-                    <div class="mt-4">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xl font-black text-gray-950">R$ 349,90</span>
-                            <span class="text-xs text-gray-500">ou 10x de R$ 34,99</span>
-                        </div>
-                        <button class="w-full bg-black text-white font-semibold py-2 rounded hover:bg-green-500 hover:text-black transition duration-200">
-                            Adicionar ao Carrinho
-                        </button>
-                    </div>
+                <div class="produto-info">
+                    <h3>Camisa Titular Real Madrid 2026</h3>
+                    <p class="preco">R$ 349,90</p>
+                    <a href="#" class="btn-comprar">Comprar</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group">
-                <div class="relative bg-gray-100 h-72 flex items-center justify-center overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1622144365315-7798305c48b7?w=500" alt="Camisa Real Madrid" class="object-cover h-full w-full group-hover:scale-110 transition duration-300">
-                    <span class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">OFF</span>
+            <div class="produto-card">
+                <div class="produto-img">
+                    <img src="https://images.unsplash.com/photo-1577223625856-745e11aa5944?w=500" alt="Camisa de Time">
                 </div>
-                <div class="p-4 flex-grow flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">La Liga</p>
-                        <h4 class="font-bold text-lg mb-2">Camisa Real Madrid Away 2026</h4>
-                    </div>
-                    <div class="mt-4">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xl font-black text-gray-950">R$ 299,90</span>
-                            <span class="text-xs text-gray-500 line-through">R$ 399,90</span>
-                        </div>
-                        <button class="w-full bg-black text-white font-semibold py-2 rounded hover:bg-green-500 hover:text-black transition duration-200">
-                            Adicionar ao Carrinho
-                        </button>
-                    </div>
+                <div class="produto-info">
+                    <h3>Camisa Reserva Flamengo 2026</h3>
+                    <p class="preco">R$ 349,90</p>
+                    <a href="#" class="btn-comprar">Comprar</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group">
-                <div class="relative bg-gray-100 h-72 flex items-center justify-center overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=500" alt="Camisa Retrô" class="object-cover h-full w-full group-hover:scale-110 transition duration-300">
+            <div class="produto-card">
+                <div class="produto-img">
+                    <img src="https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=500" alt="Camisa de Time">
                 </div>
-                <div class="p-4 flex-grow flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Retrô Clássicos</p>
-                        <h4 class="font-bold text-lg mb-2">Camisa Brasil 1970 Retrô</h4>
-                    </div>
-                    <div class="mt-4">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xl font-black text-gray-950">R$ 199,90</span>
-                            <span class="text-xs text-gray-500">ou 3x sem juros</span>
-                        </div>
-                        <button class="w-full bg-black text-white font-semibold py-2 rounded hover:bg-green-500 hover:text-black transition duration-200">
-                            Adicionar ao Carrinho
-                        </button>
-                    </div>
+                <div class="produto-info">
+                    <h3>Camisa Titular Barcelona 2026</h3>
+                    <p class="preco">R$ 349,90</p>
+                    <a href="#" class="btn-comprar">Comprar</a>
                 </div>
             </div>
-
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100 flex flex-col justify-between group">
-                <div class="relative bg-gray-100 h-72 flex items-center justify-center overflow-hidden">
-                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Camisa Treino" class="object-cover h-full w-full group-hover:scale-110 transition duration-300">
-                </div>
-                <div class="p-4 flex-grow flex flex-col justify-between">
-                    <div>
-                        <p class="text-xs text-gray-400 uppercase tracking-wider mb-1">Treino & Viagem</p>
-                        <h4 class="font-bold text-lg mb-2">Camisa Treino Barcelona 2026</h4>
-                    </div>
-                    <div class="mt-4">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-xl font-black text-gray-950">R$ 249,90</span>
-                            <span class="text-xs text-gray-500">Pronta Entrega</span>
-                        </div>
-                        <button class="w-full bg-black text-white font-semibold py-2 rounded hover:bg-green-500 hover:text-black transition duration-200">
-                            Adicionar ao Carrinho
-                        </button>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </main>
 
-    <footer class="bg-black text-gray-400 py-8 border-t border-gray-800">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-sm">&copy; 2026 Arena Mantos. Todos os direitos reservados. Este é um protótipo de e-commerce.</p>
-        </div>
+    <footer>
+        <p>&copy; 2026 FutStore - Todos os direitos reservados.</p>
     </footer>
 
 </body>

@@ -1,0 +1,168 @@
+/* Configurações Gerais / Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    border-bottom: 2px solid #32cd32; /* Verde limão esportivo */
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+.logo span {
+    color: #32cd32;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a:hover {
+    color: #32cd32;
+    transition: 0.3s;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1200') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-text h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.btn {
+    background-color: #32cd32;
+    color: #000;
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #249a24;
+}
+
+/* Conteúdo Principal / Vitrine */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* Card de Produto */
+.produto-card {
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 1px solid #2a2a2a;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    border-color: #32cd32;
+}
+
+.produto-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.produto-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.produto-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    height: 50px; /* Mantém os botões alinhados se o texto quebrar */
+}
+
+.preco {
+    color: #32cd32;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    display: block;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #32cd32;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-comprar:hover {
+    background-color: #32cd32;
+    color: #000;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0a0a0a;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #666;
+    font-size: 14px;
+}
